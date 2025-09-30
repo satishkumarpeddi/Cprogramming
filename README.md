@@ -54,4 +54,4 @@ gcc .c -o
 Choose an open license (MIT, Apache 2.0, GPL-3.0).
 ---
 ##  Contact & Attribution
-Repo owner: satishkumarpeddi
+Repo owner: Satish Kumar Peddi.
