@@ -99,6 +99,7 @@ void dfs(GRAPH G, int startIndex){
         int adjIndex = temp->data;
         if(G->visited[adjIndex]==0){
             dfs(G,adjIndex);
+            
         }
         temp=temp->next;
     }

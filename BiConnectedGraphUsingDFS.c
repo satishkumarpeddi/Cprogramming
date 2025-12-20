@@ -19,7 +19,7 @@ void addEdges(struct graph *g,int u,int v){
 }
 bool DFS(struct graph *g,int u,int parent,int visited[],int disc[],int low[]){
     visited[u]=1;
-    disc[u]=low[u]=1;
+    disc[u]=low[u]=++time_counter;
     int children=0;
     for(int v=0;v<g->vertices;v++){
         if(g->adjMatrix[u][v]){
@@ -31,7 +31,7 @@ bool DFS(struct graph *g,int u,int parent,int visited[],int disc[],int low[]){
                 if(parent!=-1&&low[v]>=disc[u])
                     return false;
             }else if(v!=parent){
-                low[u]=low[u]<disc[v]?low[u]:low[v];
+                low[u]=low[u]<disc[v]?low[u]:disc[v];
             }
         }
     }

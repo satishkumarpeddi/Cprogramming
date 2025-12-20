@@ -78,5 +78,5 @@ void main(){
     graph[3][4] = 1; graph[4][3] = 1;
     graph[4][5] = 1; graph[5][4] = 1;
     graph[1][5] = 1; graph[5][1] = 1;
-    dfs(graph,vertices,0);
+    bfs(graph,vertices,0);
 }

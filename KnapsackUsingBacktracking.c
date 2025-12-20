@@ -2,6 +2,7 @@
 int val[10],wt[10];
 int n,W;
 int maxValue=0;
+//Backtracking logic 
 void knapsack(int i,int currentWeight,int currentValue){
     if(i==n){
         if(currentValue>maxValue)
