@@ -130,9 +130,12 @@ void main(){
     root = insert(root,93);
     root = insert(root,381);
     root = insert(root,83);
+
+    printf("InOrder Traversal : ");
     inOrder(root);
-    printf("-----------------------\n");
+    printf("\n----------------------------------------------------------\n");
     root = deletion(root,381);
+    printf("InOrder Traversal after deletion : ");
     inOrder(root);
-    printf("---------------------\n");
+    printf("\n----------------------------------------------------------\n");
 }
